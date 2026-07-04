@@ -1,0 +1,26 @@
+# --- NODE / PACKAGES ---
+# Bỏ qua tất cả các thư mục node_modules ở bất kỳ cấp nào
+**/node_modules/
+
+# Bỏ qua các file log khi chạy node bị lỗi
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- BẢO MẬT (ENVIRONMENT VARIABLES) ---
+# Bỏ qua tất cả các file .env ở bất kỳ đâu trong dự án
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.production.local
+
+# --- BUILD OUTPUT ---
+# Bỏ qua thư mục kết quả build của Frontend (Vue, React, Angular...)
+frontend/dist/
+frontend/build/
+
+# --- HỆ ĐIỀU HÀNH ---
+# Bỏ qua các file rác tự sinh của hệ điều hành
+.DS_Store
+Thumbs.db
